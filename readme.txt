@@ -4,4 +4,3 @@ My first Discord bot
 - day 3 start looking at code for bot
 requirements = discord.py, python-dotenv
 
-source ~/.pyenvs/discord/bin/activate
