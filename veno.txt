@@ -1,1 +1,2 @@
 ~/.pyenvs/discord/bin/activate
+source /home/ember/.pyenvs/discord/bin/activate
