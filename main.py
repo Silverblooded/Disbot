@@ -20,4 +20,20 @@ async def on_ready():
     print(f"We are ready to go, {bot.user.name}")
 
 
+@bot.event
+async def on_member_join(member):
+    await member.send(f"How did you find this place {member.name} who do you work for?")
+
+
+@bot.event
+async def on_message(message):
+    if message.auther == bot.user:
+        return
+
+    if "fuck" in message.content.lower():
+        await message.channel.send(f"Don't say fuck {message.author.mention}, shithead")
+
+    await bot.process_commands(message)
+
+
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
